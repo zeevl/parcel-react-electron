@@ -1,4 +1,4 @@
-# parcel-react
+# parcel-react-electron
 
 A minimal Electron + React.js boilerplate with [parcel as bundler](https://github.com/parcel-bundler/parcel). Parcel is an alternative web application bundler to Webpack.
 
