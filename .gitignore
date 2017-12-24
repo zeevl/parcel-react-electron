@@ -3,4 +3,5 @@ npm-debug.log
 
 .cache/
 dist/
+build/
 node_modules/

@@ -1,6 +1,8 @@
 // Basic init
 const electron = require('electron')
 const {app, BrowserWindow} = electron
+const path = require('path');
+const url = require('url');
 
 // Let electron reloads by itself when webpack watches changes in ./app/
 require('electron-reload')(__dirname)
@@ -12,8 +14,8 @@ app.on('ready', () => {
 
     let mainWindow = new BrowserWindow({width: 800, height: 600})
 
-    const startUrl = 'http://localhost:1234' || url.format({
-          pathname: path.join(__dirname, '/../build/index.html'),
+    const startUrl = process.env.ELECTRON_START_URL || url.format({
+          pathname: path.join(__dirname, './build/index.html'),
           protocol: 'file:',
           slashes: true
         });

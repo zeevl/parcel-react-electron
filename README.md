@@ -7,4 +7,15 @@ A minimal Electron + React.js boilerplate with [parcel as bundler](https://githu
 * `git@github.com:Snjoo/parcel-react-electron.git`
 * `cd parcel-react-electron`
 * `npm install`
-* `npm start`
+
+## Usage
+
+### Development mode
+Run these commands to start dev server and Electron app
+``` bash
+# Parcel bundles the code and runs dev server
+$ npm run dev
+
+# Run the electron app
+$ npm start
+```
