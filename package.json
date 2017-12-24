@@ -7,7 +7,7 @@
     "dev": "parcel ./src/index.html",
     "start-dev": "ELECTRON_START_URL=http://localhost:1234 electron .",
     "start": "electron .",
-    "build": "parcel build ./src/index.html --out-dir build"
+    "build": "parcel build ./src/index.html --public-url ./"
   },
   "keywords": [
     "parcel",

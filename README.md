@@ -16,6 +16,6 @@ Run these commands to start dev server and Electron app
 # Parcel bundles the code and runs dev server
 $ npm run dev
 
-# Run the electron app
-$ npm start
+# Run the electron app which uses local dev server
+$ npm start-dev
 ```
