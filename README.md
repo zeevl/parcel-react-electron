@@ -19,3 +19,10 @@ $ npm run dev
 # Run the electron app which uses local dev server
 $ npm start-dev
 ```
+
+### Production mode
+Run this command to bundle code in production mode
+``` bash
+# Parcel bundle code once
+$ npm run build
+```
