@@ -6,7 +6,7 @@ A minimal Electron + React.js boilerplate with [parcel as bundler](https://githu
 
 * `git@github.com:Snjoo/parcel-react-electron.git`
 * `cd parcel-react-electron`
-* `npm install`
+* `yarn`
 
 ## Usage
 
@@ -14,15 +14,18 @@ A minimal Electron + React.js boilerplate with [parcel as bundler](https://githu
 Run these commands to start dev server and Electron app
 ``` bash
 # Parcel bundles the code and runs dev server
-$ npm run dev
+$ yarn dev
 
 # Run the electron app which uses local dev server
-$ npm start-dev
+$ yarn start-dev
 ```
 
-### Production mode
+### Production mode and packaging app
 Run this command to bundle code in production mode
 ``` bash
 # Parcel bundle code once
-$ npm run build
+$ yarn build
+
+# Create executables
+$ yarn dist
 ```

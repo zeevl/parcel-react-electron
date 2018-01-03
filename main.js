@@ -5,7 +5,9 @@ const path = require('path');
 const url = require('url');
 
 // Let electron reloads by itself when webpack watches changes in ./app/
-require('electron-reload')(__dirname)
+if (process.env.ELECTRON_START_URL) {
+  require('electron-reload')(__dirname)
+}
 
 // To avoid being garbage collected
 let mainWindow
@@ -15,7 +17,7 @@ app.on('ready', () => {
     let mainWindow = new BrowserWindow({width: 800, height: 600})
 
     const startUrl = process.env.ELECTRON_START_URL || url.format({
-          pathname: path.join(__dirname, './dist/index.html'),
+          pathname: path.join(__dirname, './build/index.html'),
           protocol: 'file:',
           slashes: true
         });
