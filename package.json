@@ -4,10 +4,10 @@
   "description": "A minimal React.js boilerplate with parcel as bundler",
   "main": "main.js",
   "scripts": {
-    "dev": "parcel ./src/index.html -d build/",
-    "start-dev": "ELECTRON_START_URL=http://localhost:1234 electron .",
+    "dev": "parcel ./src/index.html --target=electron",
+    "start-dev": "electron .",
     "start": "electron .",
-    "build": "parcel build ./src/index.html -d build/ --public-url ./",
+    "build": "parcel build ./src/index.html --public-url ./",
     "pack": "electron-builder --dir",
     "dist": "electron-builder",
     "postinstall": "electron-builder install-app-deps"
@@ -41,7 +41,6 @@
     "babel-preset-react": "^6.24.1",
     "electron": "^3.0.4",
     "electron-builder": "^20.28.4",
-    "electron-reload": "^1.2.5",
-    "parcel-bundler": "^1.10.3"
+    "parcel-bundler": "^1.12.3"
   }
 }
